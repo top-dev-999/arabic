@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+	<title>My Site</title>
+</head>
+<body>
+	<div class="container">
+		<!-- Here is header -->
+		<div class="top" style="width: 100%;">
+			<div class="row top-up">
+			    <div class="col-sm-6" style="background-color:orange;">
+			    	<div class="top-left-up" style="display: flex;justify-content: flex-end;margin-top: 30px;">
+				    	<div class="row">
+						  	<div class="col-sm-3">
+						  		<div>
+						  			<h2>חיפוש</h2>
+						  		</div>
+						  	</div>
+						  	<div class="col-sm-3">
+						  		<div class="dropdown">
+								    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+								      בחר מחיר
+								    </button>
+								    <div class="dropdown-menu">
+								      <a class="dropdown-item" href="#">Link 1</a>
+								      <a class="dropdown-item" href="#">Link 2</a>
+								      <a class="dropdown-item" href="#">Link 3</a>
+								    </div>
+								</div>
+						  	</div>
+						  	<div class="col-sm-3">
+						  		<div class="dropdown">
+								    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+								      מס’ חדרים
+								    </button>
+								    <div class="dropdown-menu">
+								      <a class="dropdown-item" href="#">Link 1</a>
+								      <a class="dropdown-item" href="#">Link 2</a>
+								      <a class="dropdown-item" href="#">Link 3</a>
+								    </div>
+								</div>
+						  	</div>
+						  	<div class="col-sm-3">
+						  		<p>אני מחפש</p>
+						  	</div>
+					  	</div>
+					</div>
+					<div class="top-left-down" style="display: flex;justify-content: flex-end;">
+						<div class="first" style="padding-right: 25px;">
+	    					<label for="defaultCheck">משתכן</label>
+						  	<input type="checkbox" id="defaultCheck" name="example2">
+    					</div>
+    					<div class="second" style="padding-right: 25px;">
+	    					<label for="defaultCheck">שוק חופשי</label>
+						  	<input type="checkbox" id="defaultCheck" name="example2">
+    					</div>
+    					<div class="third" style="padding-right: 25px;">
+	    					<label for="defaultCheck">הצג רק דירות פנויות</label>
+						  	<input type="checkbox" id="defaultCheck" name="example2">
+    					</div>
+    				</div>
+			    </div>
+			    <div class="col-sm-6" style="background-color:black;">
+			    	<div class="top-right">
+			    		<a href="#" style="display: flex;justify-content: center;"><img src="images/sample.png"></a>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+
+		<!-- Here is navbar -->
+		<nav class="navbar navbar-expand-sm bg-light">
+		  <ul class="navbar-nav">
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">צור קשר</a>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">מסמכים וקישורים</a>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">תכניות</a>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">מחירון</a>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">משכנתא</a>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">פריסת התשלומים והוצאות נלוות</a>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">תהליך הרכישה</a>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">הפרויקט</a>
+		    </li>
+		    <li class="nav-item"  >
+		      	<div class="dropdown">
+				  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+				    מפות ותרשימים 
+				  </button>
+				  <div class="dropdown-menu">
+				    <a class="dropdown-item" href="#">מפת סביבה </a>
+				    <a class="dropdown-item" href="#">תרשים העמדה </a>
+				  </div>
+				</div>
+		    </li>
+		    <li class="nav-item" style="margin-right: 20px;">
+		      <a class="nav-link" href="#">היישוב</a>
+		    </li>
+		    <li class="nav-item" style="margin-left: 20px;">
+		      <a class="nav-link" href="#">היזם</a>
+		    </li>
+		  </ul>
+		</nav>
+
+		<!-- Here is background -->
+		<div class="background" style="background-image: url('images/background1.png');">
+
+			<img src="images/background1.png" style="width: 100%;">
+		</div>
+
+
+
+		<!-- Here is second part -->
+		<div class="row" style="background-color: orange;margin: 5px;">
+			<div class="col-sm-7">
+				<img src="images/image1.png" style="width:600px;margin-top: 40px;">
+			</div>
+			<div class="col-sm-5">
+				<div class="jumbotron" style="background-color: inherit;">
+				    <h2><u>היישוב  </u></h2> 
+				    <h2><u>מרכז שפירא  </u></h2>     
+				    <p>ההיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לא</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Here is third part -->
+		<div class="row" style="margin: 15px;">
+			<div class="col-sm-7">
+				<div style="margin:10px;">
+					<img src="images/small-background1.png" style="width: 600px;">
+				</div>
+				<div class="slide" style="margin: 10px;">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+
+					  <!-- Indicators -->
+					  <ul class="carousel-indicators">
+					    <li data-target="#demo" data-slide-to="0" class="active"></li>
+					    <li data-target="#demo" data-slide-to="1"></li>
+					    <li data-target="#demo" data-slide-to="2"></li>
+					    <li data-target="#demo" data-slide-to="3"></li>
+					    <li data-target="#demo" data-slide-to="4"></li>
+					    <li data-target="#demo" data-slide-to="5"></li>
+					  </ul>
+
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img src="images/slide1.png" alt="slide1">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="images/slide2.png" alt="slide2">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="images/slide3.png" alt="slide3">
+					    </div>
+					    <div class="carousel-item active">
+					      <img src="images/slide4.png" alt="slide4">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="images/slide5.png" alt="slide5">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="images/slide6.png" alt="slide6">
+					    </div>
+					  </div>
+
+					  <!-- Left and right controls -->
+					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+					    <span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo" data-slide="next">
+					    <span class="carousel-control-next-icon"></span>
+					  </a>
+
+					</div>
+				</div>
+
+				<p class="text-right">*הדמיה להמחשה בלבד.</p>
+			</div>
+			<div class="col-sm-5">
+				<h2 class="text-center" style="margin: 10px;">הפרויקט</h2>
+				<div style="margin: 10px;background-color: black;display: flex;justify-content: center;">
+					<img src="images/sample.png">
+				</div>
+				<p style="margin: 10px;">פרויקט "קדמא מרכז שפירא", הינו פרויקט משולב בו ייהנו ממגורים זו</p>
+			</div>
+		</div>
+
+		<!-- Here is fourth Map-part -->
+		<div style="margin-top: 40px;">
+			<h1 class="text-center"><u>מפות ותרשימים  </u></h1>
+			<!--The div element for the map -->
+		    <div id="map" style="width: 100%;height: 400px;"></div>
+
+		    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+		    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+		    <div class="bg-secondary">
+		    	<h1 class="text-center"><u>תהליך הרכישה  </u></h1>
+		    	<img src="images/small-background2.png" style="width: 100%;height: 400px;">
+		    	<div style="margin: 10px;background-color: lightgrey;">
+		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo1">השלב  1  גרלה ותוצאותיה   </button>
+				  	<div id="demo1" class="collapse">
+				  		<ul class="text-right" style="list-style-type: circle;">
+					  		<li>	משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט לקביעת מיקומם</li>
+					  		<li class="text-right">	משרד הבינוי והשיכון אחראי על שליחת הודעת זכייה לכתובת המייל ו/א</li>
+					  		<li class="text-right"> בשלב זה אין צורך ליצור עמנו קשר, אנו נפנה אליכם באופן יזום.  </li>
+		    			</ul>
+					</div>
+		 		</div>
+		    	<div style="margin: 10px;background-color: lightgrey;">
+		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo2">שלב  2 הכנס זוכים מקוון: הצגת פרויקט "קדמא מרכז שפירא"  </button>
+				  	<div id="demo2" class="collapse">
+				  		<ul class="text-right" style="list-style-type: circle;">
+							<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
+					  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
+					  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
+				  		</ul>
+		    		</div>
+		    	</div>
+		    	<div style="margin: 10px;background-color: lightgrey;">
+		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo3">שלב  3 הבחירת דירה   </button>
+				  	<div id="demo3" class="collapse">
+				  		<ul class="text-right" style="list-style-type: circle;">
+							<li>	ממועד בחירת הדירה יתקיים מספר ימים לאחר שליחת הכנס ע"פ הנחיות מש   </li>
+					  		<li>	מהזמנה אישית לפגישה שאורכה המקסימלי הינו 45 דקות תישלח אל כתובת    </li>
+					  		<li> בזימון למועד זה יתבצע עפ"י סדר הזכייה בכפוף לנהלים של משרד הבינו   </li>
+			    			<li>	מאנא הקפידו להגיע המסמכים הבאים: תעודות זהות של הזוכים (כולל ספח  </li>
+					  		<li>	מבמידה ונבצר מאחד מכם להגיע - יש להצטייד בייפוי כח עפ"י נוסח החב   </li>
+					  		<li> בבמידה ומגיע צד שלישי לבחור עבורכם את הדירה- יש להצטייד בייפוי כ  </li>
+			    			<li>	מלאחר בחירת הדירה ובתום הזמן המוקצב, תתבקשו לחתום על טופס המשריי  </li>
+					  		<li>	מבמהלך תקופה זו אנו נעדכן באתר הפרויקט את מלאי הדירות הקיים בהתא  </li>
+					  		<li> *** תהליך בחירת הדירה מפוקח ע"י נציגי חברת בקרה מטעם משרד הבינו </li>
+					  	</ul>
+		    		</div>
+		    	</div>
+		    	<div style="margin: 10px;background-color: lightgrey;">
+		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo4">שלב   4  חתימה על חוזה המכר   </button>
+				  	<div id="demo4" class="collapse">
+				  		<ul class="text-right" style="list-style-type: circle;">
+							<li>	מחתימה על חוזה המכר תתקיים עד 30 ימים ממועד בחירת הדירה.  </li>
+					  		<li>	מהזמנה למועד זה תימסר לכם במועד בחירת הדירה ולאחר מכן תישלח אליכ  </li>
+					  		<li> בלחתימת החוזה יש להגיע מצוידים בתעודות זהות+ ספח ושיק עבור שכר ט   </li>
+			    			<li>	מחתימת החוזה תתבצע בנוכחות שני בני הזוג.   </li>
+					  		<li>	מבמידה ונבצר מאחד הזוכים להגיע, יש להצטייד בייפוי כח נוטריוני עפ  </li>
+					  		<li> ב*** מובהר כי חוזה המכר ונספחיו נבדקו ואושרו ע"י משרד הבינוי והש    </li>
+					  	</ul>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+
+		<!-- Here is sixth part -->
+		<div style="background-color: lightgray;">
+			<h2 class="text-center"><u>משכנתא  </u></h2>
+			<h2 class="text-center"><u>האישור העקרוני  </u></h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="images/small-background3.png" style="width: 500px;margin: 30px;">
+				</div>
+				<div class="col-sm-6">
+					<div style="margin: 30px;background-color: lightgrey;">
+			    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo1">המה הוא אישור עקרוני? </button>
+					  	<div id="demo1" class="collapse">
+					  		האישור העקרוני הוא השלב הראשון בדרך לקבלת משכנתא והוא מהווה מסמ
+					  		<ul class="text-right" style="list-style-type: circle;">
+						  		<li>	משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט לקביעת מיקומם</li>
+						  		<li class="text-right">	משרד הבינוי והשיכון אחראי על שליחת הודעת זכייה לכתובת המייל ו/א</li>
+						  		<li class="text-right"> בשלב זה אין צורך ליצור עמנו קשר, אנו נפנה אליכם באופן יזום.  </li>
+			    				<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
+						  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
+						  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
+					  		</ul>
+						</div>
+			 		</div>
+			    	<div style="margin: 30px;background-color: lightgrey;">
+			    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo2">שמה אחוז המימון המקסימלי אותו ניתן לקבל? </button>
+					  	<div id="demo2" class="collapse">
+					  		אחוז המימון המקסימלי כפי שאישר בנק ישראל הינו עד 75% משווי הנכס
+					  		<ul class="text-right" style="list-style-type: circle;">
+								<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
+						  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
+						  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
+					  			<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
+						  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
+						  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
+					  		</ul>
+			    		</div>
+			    	</div>
+				</div>
+			</div>
+			<p class="text-right">*** אין לראות במידע זה כייעוץ משפטי ו/או ייעוץ כלכלי ו/או חוות </p>
+		</div>
+
+		<!-- Here is seventh -->
+		<div>
+			<div style="background-image: url('images/small-background4.png');width: 100%;height: 350px;">
+			    	<div class="top-left-up" style="display: flex;justify-content: flex-end;padding-top: 250px;">
+				    	<div class="row">
+						  	<div class="col-sm-3">
+						  		<div>
+						  			<h2 class="text-center"><u>חיפוש  </u></h2>
+						  		</div>
+						  	</div>
+						  	<div class="col-sm-3">
+						  		<div class="dropdown">
+								    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+								      בחר מחיר
+								    </button>
+								    <div class="dropdown-menu">
+								      <a class="dropdown-item" href="#">Link 1</a>
+								      <a class="dropdown-item" href="#">Link 2</a>
+								      <a class="dropdown-item" href="#">Link 3</a>
+								    </div>
+								</div>
+						  	</div>
+						  	<div class="col-sm-3">
+						  		<div class="dropdown">
+								    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+								      מס’ חדרים
+								    </button>
+								    <div class="dropdown-menu">
+								      <a class="dropdown-item" href="#">Link 1</a>
+								      <a class="dropdown-item" href="#">Link 2</a>
+								      <a class="dropdown-item" href="#">Link 3</a>
+								    </div>
+								</div>
+						  	</div>
+						  	<div class="col-sm-3">
+						  		<p>אני מחפש</p>
+						  	</div>
+					  	</div>
+					</div>
+					<div class="top-left-down" style="display: flex;justify-content: flex-end;">
+						<div class="first" style="padding-right: 25px;">
+	    					<label for="defaultCheck">משתכן</label>
+						  	<input type="checkbox" id="defaultCheck" name="example2">
+    					</div>
+    					<div class="second" style="padding-right: 25px;">
+	    					<label for="defaultCheck">שוק חופשי</label>
+						  	<input type="checkbox" id="defaultCheck" name="example2">
+    					</div>
+    					<div class="third" style="padding-right: 25px;">
+	    					<label for="defaultCheck">הצג רק דירות פנויות</label>
+						  	<input type="checkbox" id="defaultCheck" name="example2">
+    					</div>
+    				</div>
+			</div>
+			<div style="margin: 20px;">
+				<table class="table table-striped" border="1" style="width: 100%;">
+					<thead style="background-color: lightgray;">
+						<tr>
+							<td>1בניין  </td>
+							<td>2בניין  </td>
+							<td>3בניין  </td>
+							<td>4בניין  </td>
+							<td>5בניין  </td>
+							<td>5בניין  </td>
+							<td>6בניין  </td>
+							<td>7בניין  </td>
+							<td>8בניין  </td>
+							<td>9בניין  </td>
+							<td>10בניין  </td>
+							<td>11בניין  </td>
+							<td>12בניין  </td>
+							<td>13בניין  </td>
+							<td>14בניין  </td>
+							<td>15בניין  </td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="background-color: lightgray;">
+							<td>הערות </td>
+							<td>תכנית להורדה   </td>
+							<td>משתכן/שוק חופשי </td>
+							<td>מחיר כולל מע"מ  </td>
+							<td>מספר חניות  </td>
+							<td>שטח מחסן  </td>
+							<td>שטח דירה </td>
+							<td>מספר חדרים</td>
+							<td>קומה </td>
+							<td>דגם דירה </td>
+							<td>מספר דירה </td>
+							<td>מספר בניין </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>975,913 ₪</td>
+							<td></td>
+							<td>6.01</td>
+							<td></td>
+							<td>124.39</td>
+							<td>5</td>
+							<td>-4</td>
+							<td>1</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>1,685,745 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>3</td>
+							<td>-4</td>
+							<td>2</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>1,234,262 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>3</td>
+							<td>-3</td>
+							<td>3</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>1,233,860 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>5</td>
+							<td>-2</td>
+							<td>4</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>1,490,251 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>4</td>
+							<td>-1</td>
+							<td>5</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>1,489,394 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>4</td>
+							<td>0</td>
+							<td>6</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>1,147,009 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>5</td>
+							<td>0</td>
+							<td>7</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>1,114,532 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>3</td>
+							<td>1</td>
+							<td>8</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>760,341 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>3</td>
+							<td>3</td>
+							<td>9</td>
+							<td>41</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>משתכן</td>
+							<td>913,441 ₪</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>3</td>
+							<td>4</td>
+							<td>10</td>
+							<td>41</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div>
+			<img src="images/sckech.png">
+		</div>
+
+		<!-- Here is list part -->
+		<div class="bg-light">
+			<h2 class="text-center text-dack" style="margin: 50px;">מסמכים וקישורים</h2>
+			<ul style="display: flex;">
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>טופס בחירת דירה  </p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p> דוגמא לאישור  זכאות בתוקף </p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>קישור לאתר הגרלות</p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>ייפוי כח נוטריוני לחתימת חוזה</p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>ייפוי כח נוטריוני  לבחירת דירה (צד ג’)</p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>ייפוי כח לבחירת דירה ע”י בן הזוג</p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>ג’4 מאושר</p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>חוזה מכר</p>
+				</li>
+				<li style="padding-right: 55px;">
+					<img src="images/pdf.png">
+					<p>מפרט מכר</p>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Here is foot part -->
+		<div class="foot">
+			<div class="foot-up" style="background-color: black;height: 120px;">
+				<a href="#" style="display: flex;justify-content: center;"><img src="images/sample.png"></a>
+			</div>
+			<div class="foot-down" style="background-color: orange;">
+				<h3 class="text-center text-white">צור עמנו קשר </h3>
+				<p class="text-center text-white">טלפון: 077-6052607 |  ימים א’-ה’ בין השעות 10:00-17:00 <i class="fa fa-volume-control-phone"></i></p>
+				<p class="text-center text-white">דוא"ל: kedmambe@gmail.com<i class="glyphicon glyphicon-envelope"></i></p>
+				<p class="text-right text-white">© כל הזכויות שמורות לארבל ניהול ושיווק נדל"ן.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
