@@ -11,23 +11,58 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style type="text/css">
+    	.item.active,
+        .item.active + .item,
+        .item.active + .item  + .item {
+           width: 33.3%;
+           display: block;
+           float:left;
+        }     
+    </style>
+    <style type="text/css">
+    	.row {
+			  display: -ms-flexbox; /* IE10 */
+			  display: flex;
+			  -ms-flex-wrap: wrap; /* IE10 */
+			  flex-wrap: wrap;
+			  padding: 0 4px;
+			}
+
+			/* Create four equal columns that sits next to each other */
+			.column {
+			  -ms-flex: 25%; /* IE10 */
+			  flex: 25%;
+			  max-width: 25%;
+			  padding: 0 4px;
+			}
+
+			.column img {
+			  margin-top: 8px;
+			  vertical-align: middle;
+			  width: 100%;
+			}
+
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media screen and (max-width: 800px) {
+			  .column {
+			    -ms-flex: 50%;
+			    flex: 50%;
+			    max-width: 50%;
+			  }
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 600px) {
+			  .column {
+			    -ms-flex: 100%;
+			    flex: 100%;
+			    max-width: 100%;
+			  }
+			}
+    </style>
 
 	<title>My Site</title>
 	<link rel="shortcut icon" href="{{ asset('images/sample.png') }}">
@@ -42,7 +77,15 @@
 				    	<div class="row">
 						  	<div class="col-md-3">
 						  		<div class="bg-secondary">
-						  			<h2 style="margin-top: 0px;">חיפוש</h2>
+						  			<!-- <button> style="margin-top: 0px;">חיפוש  </button> -->
+						  			<div class="dropdown">
+									    <button type="button" class="btn btn-transparent dropdown-toggle text-warning" data-toggle="dropdown">
+									      ביפוש  
+									    </button>
+									    <div class="dropdown-menu">
+									      <input class="dropdown-item" type="text" name="search">
+									    </div>
+									</div>
 						  		</div>
 						  	</div>
 						  	<div class="col-md-3">
@@ -174,44 +217,30 @@
 			<div>
 
 				<!-- Photo Grid -->
-				<!-- <div class="row"> 
-				  <div class="column">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				  </div>
-				  <div class="column">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				  </div>  
-				  <div class="column">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				  </div>
-				  <div class="column">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				    <img src="images/img1.png" style="width:100%">
-				  </div>
-				</ -->div>
-
 				<div class="row"> 
+				  <div class="column">
+				    <img src="images/img3.png" style="width:100%">
+				    <img src="images/img4.png" style="width:100%">
+				    			    
+				  </div>
+				  <div class="column">
+				  	<img src="images/img5.png" style="width:100%">
+				    <img src="images/img6.png" style="width:100%">
+				    
+				  </div>
+				  <div class="column">
+				  	<img src="images/img7.png" style="width:100%">
+				    <img src="images/img8.png" style="width:100%">
+				  	
+				  </div>
+				  <div class="column">
+				  	<img src="images/img1.png" style="width:100%">
+				    <img src="images/img2.png" style="width:100%">	
+				  </div>
+			
+				</div>
+
+				<!-- <div class="row"> 
 				  <div class="col-md-3 col-sm-12">
 				    <img src="images/img1.png" style="width:100%">
 				  </div>
@@ -238,7 +267,7 @@
 				  <div class="col-md-3 col-sm-12">
 				    <img src="images/img8.png" style="width:100%">
 				  </div>
-				</div>
+				</div> -->
 			</div>
 			<p class="text-right">תמונות והדמיות להמחשה בלבד. </p>
 		</div>
@@ -250,8 +279,8 @@
 			</div>
 			<div class="col-md-5 col-sm-12">
 				<div class="jumbotron" style="background-color: inherit;">
-				    <h2><u>היישוב  </u></h2> 
-				    <h2><u>מרכז שפירא  </u></h2>     
+				    <h2 style="border-top: 3px solid orange;">היישוב  </h2> 
+				    <h2 style="border-top: 3px solid orange;">מרכז שפירא  </h2>     
 				    <p>ההיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לא</p>
 				</div>
 			</div>
@@ -263,21 +292,61 @@
 				<div style="margin:10px;">
 					<img src="images/small-background1.png" style="width: 100%;box-shadow: 10px 10px 10px #000000;">
 				</div>
-				<div class="slide" style="margin: 10px;">
+				<div class="slide" style="margin:5px;">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="max-width:1200px;">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				        <img src="images/slide1.png">
+				    </div>
+				    <div class="item">
+				        <img src="images/slide2.png">
+				    </div>
+				    <div class="item">
+				        <img src="images/slide3.png">
+				    </div>
+				    <div class="item">
+				        <img src="images/slide4.png">
+				    </div>
+				    <div class="item">
+				        <img src="images/slide5.png">
+				    </div>
+				    <div class="item">
+				        <img src="images/slide6.png">
+				    </div> 
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				</div>
+				<!-- <div class="slide" style="margin: 10px;">
 					<div id="demo" class="carousel slide" data-ride="carousel">
 
-					  <!-- Indicators -->
-					  <ul class="carousel-indicators">
+					  <ol class="carousel-indicators">
 					    <li data-target="#demo" data-slide-to="0" class="active"></li>
 					    <li data-target="#demo" data-slide-to="1"></li>
 					    <li data-target="#demo" data-slide-to="2"></li>
 					    <li data-target="#demo" data-slide-to="3"></li>
 					    <li data-target="#demo" data-slide-to="4"></li>
 					    <li data-target="#demo" data-slide-to="5"></li>
-					  </ul>
+					  </ol>
 
-					  <!-- The slideshow -->
-					  <div class="carousel-inner">
+					  <div class="carousel-inner" role="listbox">
 					    <div class="carousel-item active">
 					      <img src="images/slide1.png" alt="slide1">
 					    </div>
@@ -298,7 +367,6 @@
 					    </div>
 					  </div>
 
-					  <!-- Left and right controls -->
 					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
 					    <span class="carousel-control-prev-icon"></span>
 					  </a>
@@ -307,7 +375,7 @@
 					  </a>
 
 					</div>
-				</div>
+				</div> -->
 
 				<p class="text-right">*הדמיה להמחשה בלבד.</p>
 			</div>
@@ -322,16 +390,20 @@
 
 		<!-- Here is fourth Map-part -->
 		<div style="margin-top: 40px;">
-			<h1 class="text-center"><u>מפות ותרשימים  </u></h1>
-			<!--The div element for the map -->
-		    <div id="map" style="width: 100%;height: 400px;margin: 40px;"></div>
+			
+		    <div style="background-color:#151048;">
+		    	<h1 class="text-center text-light"><u>מפות ותרשימים  </u></h1>
+				<!--The div element for the map -->
+			    <div id="map" style="width: 600px; height: 400px;margin-left: 355px;"></div>
 
-		    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-		    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
-		    <div class="bg-secondary">
-		    	<h1 class="text-center" style="margin:40px;"><u>תהליך הרכישה  </u></h1>
-		    	<img src="images/small-background2.png" style="width: 100%;height: 400px;">
-		    	<div style="margin: 10px;background-color: lightgrey;">
+			    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+			    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+
+
+		    	<h1 class="text-center text-light" style="padding-top: 60px;"><u>תהליך הרכישה  </u></h1>
+		    	<img src="images/small-background2.png" style="height: 437px;margin: 124px;box-shadow: 19px -20px 0px 0px ghostwhite;">
+		    	<div style="margin: 10px 124px 10px 124px;background-color: lightgrey;">
 		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo1">השלב  1  גרלה ותוצאותיה   </button>
 				  	<div id="demo1" class="collapse">
 				  		<ul class="text-right" style="list-style-type: circle;">
@@ -341,7 +413,7 @@
 		    			</ul>
 					</div>
 		 		</div>
-		    	<div style="margin: 10px;background-color: lightgrey;">
+		    	<div style="margin: 10px 124px 10px 124px;background-color: lightgrey;">
 		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo2">שלב  2 הכנס זוכים מקוון: הצגת פרויקט "קדמא מרכז שפירא"  </button>
 				  	<div id="demo2" class="collapse">
 				  		<ul class="text-right" style="list-style-type: circle;">
@@ -351,7 +423,7 @@
 				  		</ul>
 		    		</div>
 		    	</div>
-		    	<div style="margin: 10px;background-color: lightgrey;">
+		    	<div style="margin: 10px 124px 10px 124px;background-color: lightgrey;">
 		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo3">שלב  3 הבחירת דירה   </button>
 				  	<div id="demo3" class="collapse">
 				  		<ul class="text-right" style="list-style-type: circle;">
@@ -367,7 +439,7 @@
 					  	</ul>
 		    		</div>
 		    	</div>
-		    	<div style="margin: 10px;background-color: lightgrey;">
+		    	<div style="margin: 10px 124px 100px 124px;background-color: lightgrey;">
 		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo4">שלב   4  חתימה על חוזה המכר   </button>
 				  	<div id="demo4" class="collapse">
 				  		<ul class="text-right" style="list-style-type: circle;">
@@ -490,8 +562,16 @@
 			    	<div class="top-left-up" style="display: flex;justify-content: center;padding-top: 250px;">
 				    	<div class="row">
 						  	<div class="col-sm-3">
-						  		<div>
-						  			<h2 class="text-center text-light" style="margin-top:0px;background-color: #a1a007;"><u>חיפוש  </u></h2>
+						  		<div class="bg-secondary">
+						  			<!-- <button> style="margin-top: 0px;">חיפוש  </button> -->
+						  			<div class="dropdown">
+									    <button type="button" class="btn btn-warning dropdown-toggle text-dark" data-toggle="dropdown">
+									      ביפוש  
+									    </button>
+									    <div class="dropdown-menu">
+									      <input class="dropdown-item" type="text" name="search">
+									    </div>
+									</div>
 						  		</div>
 						  	</div>
 						  	<div class="col-sm-3">
@@ -1004,6 +1084,38 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.1/holder.min.js"></script>
+    
+   
+    <!-- Here is slide script -->
+	<script type="text/javascript">
+			$('#carousel-example-generic').on('slid.bs.carousel', function () {
+		        $(".item.active:nth-child(" + ($(".carousel-inner .item").length -1) + ") + .item").insertBefore($(".item:first-child"));
+		        $(".item.active:last-child").insertBefore($(".item:first-child"));
+		    }); 
+	</script>
 
+	<!-- Here get map -->
+	<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    
+		
 </body>
 </html>
