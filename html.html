@@ -30,6 +30,7 @@
     </script>
 
 	<title>My Site</title>
+	<link rel="shortcut icon" href="{{ asset('images/sample.png') }}">
 </head>
 <body>
 	<div style="width:100%">
@@ -97,56 +98,58 @@
 		</div>
 
 		<!-- Here is navbar -->
-		<nav class="navbar navbar-expand-md bg-transparent navbar-transparent">
-		  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-			  <ul class="navbar-nav">
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">צור קשר</a>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">מסמכים וקישורים</a>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">תכניות</a>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">מחירון</a>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">משכנתא</a>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">פריסת התשלומים והוצאות נלוות</a>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">תהליך הרכישה</a>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">הפרויקט</a>
-			    </li>
-			    <li class="nav-item"  >
-			      	<div class="dropdown">
-					  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-					    מפות ותרשימים 
-					  </button>
-					  <div class="dropdown-menu">
-					    <a class="dropdown-item" href="#">מפת סביבה </a>
-					    <a class="dropdown-item" href="#">תרשים העמדה </a>
-					  </div>
-					</div>
-			    </li>
-			    <li class="nav-item" style="margin-right: 20px;">
-			      <a class="nav-link" href="#">היישוב</a>
-			    </li>
-			    <li class="nav-item" style="margin-left: 20px;">
-			      <a class="nav-link" href="#">היזם</a>
-			    </li>
-			  </ul>
-		  </div> 
-		</nav>
+		<div style="display:flex;justify-content: center;">
+			<nav class="navbar navbar-expand-md bg-transparent navbar-transparent">
+			  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+				  <ul class="navbar-nav">
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">צור קשר</a>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">מסמכים וקישורים</a>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">תכניות</a>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">מחירון</a>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">משכנתא</a>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">פריסת התשלומים והוצאות נלוות</a>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">תהליך הרכישה</a>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">הפרויקט</a>
+				    </li>
+				    <li class="nav-item"  >
+				      	<div class="dropdown">
+						  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+						    מפות ותרשימים 
+						  </button>
+						  <div class="dropdown-menu">
+						    <a class="dropdown-item" href="#">מפת סביבה </a>
+						    <a class="dropdown-item" href="#">תרשים העמדה </a>
+						  </div>
+						</div>
+				    </li>
+				    <li class="nav-item" style="margin-right: 20px;">
+				      <a class="nav-link" href="#">היישוב</a>
+				    </li>
+				    <li class="nav-item" style="margin-left: 20px;">
+				      <a class="nav-link" href="#">היזם</a>
+				    </li>
+				  </ul>
+			  </div> 
+			</nav>
+		</div>
 
 		<!-- Here is background -->
 		<div class="background" style="background-image: url('images/background1.png');">
@@ -156,11 +159,58 @@
 
 		<!-- Here is first part -->
 		<div>
-			<div style="display:flex;justify-content: center;">
+			<div style="display:flex;justify-content: center;width: 100vw;height: 45vh;">
 				<img src="images/center.png">
 			</div>
-			<p class="text-center">חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  </p>
+			<p class="text-center">חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
+				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן <br>
+				חהוקמה ע"י דוד כהן לוגמן ברת קדמא נדל"ן גינדי וגבריאל פז (גגו) ק<br>
+				חהוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו)ברת קדמא נדל"ן  קלוגמן <br>
+				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן <br>
+				חהוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן ברת קדמא נדל"ן <br>
+				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן <br>
+				חברת קדמא נדל"ן הגינדי וגבריאל פז (גגו)וקמה ע"י דוד כהן  קלוגמן 
+			</p>
 			<div>
+
+				<!-- Photo Grid -->
+				<!-- <div class="row"> 
+				  <div class="column">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				  </div>
+				  <div class="column">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				  </div>  
+				  <div class="column">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				  </div>
+				  <div class="column">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				    <img src="images/img1.png" style="width:100%">
+				  </div>
+				</ -->div>
+
 				<div class="row"> 
 				  <div class="col-md-3 col-sm-12">
 				    <img src="images/img1.png" style="width:100%">
@@ -196,7 +246,7 @@
 		<!-- Here is second part -->
 		<div class="row" style="background-color: #ffcc66;margin: 5px;">
 			<div class="col-md-7 col-sm-12">
-				<img src="images/image1.png" style="width:35vw;margin-top: 40px;box-shadow: 20px 20px 50px #000000;">
+				<img src="images/image1.png" style="width:45vw;margin-top: 40px;margin-left: -20px;">
 			</div>
 			<div class="col-md-5 col-sm-12">
 				<div class="jumbotron" style="background-color: inherit;">
@@ -262,7 +312,7 @@
 				<p class="text-right">*הדמיה להמחשה בלבד.</p>
 			</div>
 			<div class="col-md-5 col-sm-12">
-				<h2 class="text-center" style="margin: 10px;">הפרויקט</h2>
+				<h2 class="text-center" style="margin: 30px;"><u>הפרויקט  </u></h2>
 				<div style="margin: 10px;background-color: #1e191a;display: flex;justify-content: center;">
 					<img src="images/sample.png">
 				</div>
@@ -274,12 +324,12 @@
 		<div style="margin-top: 40px;">
 			<h1 class="text-center"><u>מפות ותרשימים  </u></h1>
 			<!--The div element for the map -->
-		    <div id="map" style="width: 100%;height: 400px;"></div>
+		    <div id="map" style="width: 100%;height: 400px;margin: 40px;"></div>
 
 		    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 		    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 		    <div class="bg-secondary">
-		    	<h1 class="text-center"><u>תהליך הרכישה  </u></h1>
+		    	<h1 class="text-center" style="margin:40px;"><u>תהליך הרכישה  </u></h1>
 		    	<img src="images/small-background2.png" style="width: 100%;height: 400px;">
 		    	<div style="margin: 10px;background-color: lightgrey;">
 		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo1">השלב  1  גרלה ותוצאותיה   </button>
@@ -333,9 +383,68 @@
 		    </div>
 		</div>
 
+		<!-- Here is fifth part -->
+		<div>
+			<h2 class="text-center"><u>פריסת תשלומים  </u></h2>
+			<h2 class="text-center">והוצאות נלוות  </h2>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 col-sm-12">
+					<p class="text-right">• 10% לאחר ביצוע 90% מעבודות הטייח בדירה, בתאריך <br>
+						30/8/2020 
+					</p>
+					<p class="text-right">• 10% לאחר ביצוע 90% מעבודות הטייח בדירה, בתאריך <br>
+						30/8/2020 
+					</p>
+					<p class="text-right">• 10% לאחר ביצוע 90% מעבודות הטייח בדירה, בתאריך <br>
+						30/8/2020 
+					</p>
+					<p class="text-right">• 10% לאחר ביצוע 90% מעבודות הטייח בדירה, בתאריך <br>
+						30/8/2020 
+					</p>
+					<p class="text-right">• 10% לאחר ביצוע 90% מעבודות הטייח בדירה, בתאריך <br>
+						30/8/2020 
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<p class="text-right">• 7% בחתימת ההסכם <br>
+						• 13% תוך 45 יום מחתימת ההסכם <br>
+						• 10% לאחר יציק  
+					</p>
+					<p class="text-right">• 7% בחתימת ההסכם <br>
+						• 13% תוך 45 יום מחתימת ההסכם <br>
+						• 10% לאחר יציק  
+					</p>
+					<p class="text-right">• 7% בחתימת ההסכם <br>
+						• 13% תוך 45 יום מחתימת ההסכם <br>
+						• 10% לאחר יציק  
+					</p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 col-sm-12">
+					<h4 class="text-right"><strong>מועד המסירה: 31/07/2021</strong></h4>
+					<p class="text-right">פרויקט "קדמא בית אל" מלווה ע"י בנק ירוש  <br>
+							רויקט "קדמא בית אל" מלווה ע"י בנק ירוש  <br>
+							רויקט "קדמא בית אל" מלווה ע"י בנק ירוש  
+					</p><br><br><br>
+					<h4 class="text-right"><strong>בנוסף למחיר הדירה, התשלומים הבאים יחולו על הרוכש וישולמו על ידו  </strong></h4>
+					<p class="text-right">• 5% ממחיר הדירה עד לסך של 4,960 ₪ בתוספת מע"מ ישולמו במעמד 		חתי  <br>
+						• 5% ממחיר הדירה עד לסך של 4,960 ₪ בתוספת מע"מ ישולמו במעמד 		חתי <br>
+						• 5% ממחיר הדירה עד לסך של 4,960 ₪ בתוספת מע"מ ישולמו במעמד 		חתי <br>
+						• 5% ממחיר הדירה עד לסך של 4,960 ₪ בתוספת מע"מ ישולמו במעמד 		חתי 
+					</p>
+				
+				</div>
+				<div class="col-md-2"></div>
+			</div>	
+		</div>
+
 		<!-- Here is sixth part -->
 		<div style="background-color: lightgray;">
-			<h2 class="text-center"><u>משכנתא  </u></h2>
+			<h2 class="text-center">משכנתא  </u></h2>
 			<h2 class="text-center"><u>האישור העקרוני  </u></h2>
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
@@ -377,17 +486,17 @@
 
 		<!-- Here is seventh -->
 		<div>
-			<div style="background-image: url('images/small-background4.png');width: 100%;height: 350px;">
-			    	<div class="top-left-up" style="display: flex;justify-content: flex-end;padding-top: 250px;">
+			<div style="background-image: url('images/small-background4.png');width: 100%;height: 350px;box-shadow: 5px 5px 5px #000000; margin: -10px;">
+			    	<div class="top-left-up" style="display: flex;justify-content: center;padding-top: 250px;">
 				    	<div class="row">
 						  	<div class="col-sm-3">
 						  		<div>
-						  			<h2 class="text-center bg-secondary" style="margin-top:0px;"><u>חיפוש  </u></h2>
+						  			<h2 class="text-center text-light" style="margin-top:0px;background-color: #a1a007;"><u>חיפוש  </u></h2>
 						  		</div>
 						  	</div>
 						  	<div class="col-sm-3">
 						  		<div class="dropdown">
-								    <button type="button" class="btn btn-transparent border border-black dropdown-toggle" data-toggle="dropdown">
+								    <button type="button" class="btn btn-transparent border border-black dropdown-toggle text-light" data-toggle="dropdown">
 								      בחר מחיר
 								    </button>
 								    <div class="dropdown-menu">
@@ -399,7 +508,7 @@
 						  	</div>
 						  	<div class="col-sm-3">
 						  		<div class="dropdown">
-								    <button type="button" class="btn btn-transparent border border-black dropdown-toggle" data-toggle="dropdown">
+								    <button type="button" class="btn btn-transparent border border-black dropdown-toggle text-light" data-toggle="dropdown">
 								      מס’ חדרים
 								    </button>
 								    <div class="dropdown-menu">
@@ -410,20 +519,20 @@
 								</div>
 						  	</div>
 						  	<div class="col-sm-3">
-						  		<p style="margin-top: 5px; ">אני מחפש</p>
+						  		<p class="text-light" style="margin-top: 5px; ">אני מחפש</p>
 						  	</div>
 					  	</div>
 					</div>
-					<div class="top-left-down" style="display: flex;justify-content: flex-end;">
-						<div class="first" style="padding-right: 25px;">
+					<div class="top-left-down" style="display: flex;justify-content: center;">
+						<div class="text-light" style="padding-right: 25px;">
 	    					<label for="defaultCheck">משתכן</label>
 						  	<input type="checkbox" id="defaultCheck" name="example2">
     					</div>
-    					<div class="second" style="padding-right: 25px;">
+    					<div class="text-light" style="padding-right: 25px;">
 	    					<label for="defaultCheck">שוק חופשי</label>
-						  	<input type="checkbox" id="defaultCheck" name="example2">
+						  	<input type="checkbox" id="defaultCheck" name="ex ample2">
     					</div>
-    					<div class="third" style="padding-right: 25px;">
+    					<div class="text-light" style="padding-right: 25px;">
 	    					<label for="defaultCheck">הצג רק דירות פנויות</label>
 						  	<input type="checkbox" id="defaultCheck" name="example2">
     					</div>
@@ -431,7 +540,7 @@
 			</div>
 			<div style="margin: 20px;overflow-x:auto;">
 				<table class="table table-striped" border="1" style="width: 100%;">
-					<thead style="background-color: lightgray;">
+					<thead class="text-light" style="background-color: #003366;">
 						<tr>
 							<th>1בניין  </th>
 							<th>2בניין  </th>
@@ -452,7 +561,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr style="background-color: lightgray;">
+						<tr class="text-light" style="background-color: #003366;">
 							<td>הערות </td>
 							<td>תכנית להורדה   </td>
 							<td>משתכן/שוק חופשי </td>
@@ -696,11 +805,11 @@
 		</div>
 
 		<!-- Here is sckech part -->
-		<div style="background-image: url('images/sckech.png');">
+		<div style="background-image: url('images/sckech.png');box-shadow: 17px -2px 10px #000000;">
 			<h2 class="text-center"><u>תכניות  </u></h2>
 			<div style="margin: 20px;overflow-x:auto;">
 				<table class="table table-striped" border="1" style="width: 100%;">
-					<thead style="background-color: lightgray;">
+					<thead class="text-light" style="background-color: #003366;">
 						<tr>
 							<td>1בניין  </td>
 							<td>2בניין  </td>
@@ -721,7 +830,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr style="background-color: lightgray;">
+						<tr class="text-light" style="background-color: #003366;">
 							<td colspan="8" class="text-center">תוכנית דירה  </td>
 							<td colspan="8" class="text-center">תוכנית קומה  </td>
 						</tr>
@@ -823,8 +932,8 @@
 		<!-- Here is list part -->
 		<div class='clearfix'></div>
 		<div class="center" style="margin-top:3%; margin-bottom:5%">
-			<h2 class="text-dack page-header text-center" style="margin: 50px;">מסמכים וקישורים</h2>
-			<ul class="press" style="display: flex;">
+			<h2 class="text-dack page-header text-center" style="margin: 50px;margin: inherit;"><u>מסמכים וקישורים  </u></h2>
+			<ul class="press" style="display: flex;justify-content: center; list-style-type: none;">
 				<li style="padding-right: 55px;">
 					<div class="press-logo">
 						<img src="images/pdf.png">
@@ -884,14 +993,14 @@
 
 		<!-- Here is foot part -->
 		<div class="foot">
-			<div class="foot-up" style="background-color: #1e191a;height: 120px;">
+			<div class="foot-up" style="background-color: #1e191a;height: 120px;margin: -20px;">
 				<a href="#" style="display: flex;justify-content: center;"><img src="images/sample.png"></a>
 			</div>
 			<div class="foot-down" style="background-color: #ffcc66;">
-				<h3 class="text-center text-white">צור עמנו קשר </h3>
-				<p class="text-center text-white">טלפון: 077-6052607 |  ימים א’-ה’ בין השעות 10:00-17:00 <i class="fa fa-volume-control-phone"></i></p>
-				<p class="text-center text-white">דוא"ל: kedmambe@gmail.com<i class="glyphicon glyphicon-envelope"></i></p>
-				<p class="text-right text-white">© כל הזכויות שמורות לארבל ניהול ושיווק נדל"ן.</p>
+				<h3 class="text-center text-black">צור עמנו קשר </h3>
+				<p class="text-center text-black">טלפון: 077-6052607 |  ימים א’-ה’ בין השעות 10:00-17:00 <i class="fa fa-volume-control-phone"></i></p>
+				<p class="text-center text-black">דוא"ל: kedmambe@gmail.com<i class="glyphicon glyphicon-envelope"></i></p>
+				<p class="text-right text-black">© כל הזכויות שמורות לארבל ניהול ושיווק נדל"ן.</p>
 			</div>
 		</div>
 	</div>
