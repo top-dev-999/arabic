@@ -63,6 +63,72 @@
 			  }
 			}
     </style>
+    <style type="text/css">
+    	.wave-top {
+		  position: relative;
+		  margin-top: 100px;
+		  width: 100%;
+		}
+
+		.wave-top::before,
+		.wave-top::after {
+		  border-bottom: 5px solid rgba(217, 189, 78, 1);
+		}
+
+
+		.wave-top::after {
+		  	    content: "";
+			    display: block;
+			    position: absolute;
+			    border-radius: 136% 124%;
+			    width: 1350px;
+			    height: 112px;
+			    background-color: rgba(217, 189, 78, 1);
+			    right: 0;
+			    top: -54px;
+		}
+
+		.wave-mid {
+		  background-color: rgba(217, 189, 78, 1);
+		  height:400px;
+		  width: 100%;
+		}
+
+		.wave-bottom {
+		  position: relative;
+		  width: 100%;
+		}
+
+		.wave-bottom::before,
+		.wave-bottom::after {
+		  border-top: 15px solid rgba(217, 189, 78, 1);
+		}
+
+		.wave-bottom::before {
+			    content: "";
+			    display: block;
+			    position: absolute;
+			    border-radius: 64% 74%;
+			    width: 796px;
+			    height: 108px;
+			    background-color: white;
+			    left: -2px;
+			    top: -53px;
+		}
+
+		.wave-bottom::after {
+			    content: "";
+			    display: block;
+			    position: absolute;
+			    border-radius: 32% 50%;
+			    width: 572px;
+			    height: 59px;
+			    background-color: rgba(217, 189, 78, 1);
+			    right: 0px;
+			    top: -39px;
+		}
+
+    </style>
 
 	<title>My Site</title>
 	<link rel="shortcut icon" href="{{ asset('images/sample.png') }}">
@@ -149,28 +215,28 @@
 			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 				  <ul class="navbar-nav">
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">צור קשר</a>
+				      <a class="nav-link text-dark" href="#">צור קשר </a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">מסמכים וקישורים</a>
+				      <a class="nav-link text-dark" href="#">מסמכים וקישורים</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">תכניות</a>
+				      <a class="nav-link text-dark" href="#">תכניות</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">מחירון</a>
+				      <a class="nav-link text-dark" href="#">מחירון</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">משכנתא</a>
+				      <a class="nav-link text-dark" href="#">משכנתא</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">פריסת התשלומים והוצאות נלוות</a>
+				      <a class="nav-link text-dark" href="#">פריסת התשלומים והוצאות נלוות</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">תהליך הרכישה</a>
+				      <a class="nav-link text-dark" href="#">תהליך הרכישה</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">הפרויקט</a>
+				      <a class="nav-link text-dark" href="#">הפרויקט</a>
 				    </li>
 				    <li class="nav-item"  >
 				      	<div class="dropdown">
@@ -184,10 +250,10 @@
 						</div>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link" href="#">היישוב</a>
+				      <a class="nav-link text-dark" href="#">היישוב</a>
 				    </li>
 				    <li class="nav-item" style="margin-left: 20px;">
-				      <a class="nav-link" href="#">היזם</a>
+				      <a class="nav-link text-dark" href="#">היזם</a>
 				    </li>
 				  </ul>
 			  </div> 
@@ -206,13 +272,13 @@
 				<img src="images/center.png">
 			</div>
 			<p class="text-center">חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
-				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן <br>
-				חהוקמה ע"י דוד כהן לוגמן ברת קדמא נדל"ן גינדי וגבריאל פז (גגו) ק<br>
-				חהוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו)ברת קדמא נדל"ן  קלוגמן <br>
-				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן <br>
-				חהוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן ברת קדמא נדל"ן <br>
-				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן <br>
-				חברת קדמא נדל"ן הגינדי וגבריאל פז (גגו)וקמה ע"י דוד כהן  קלוגמן 
+				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
+				חלוגמן ברת קדמא נדל"ן גינדי וק  <br>
+				חהוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו)ברת קדמא נדל"ן  קלוגמן  <br>
+				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
+				חינדי וגבריאל פז (גגו) קקדמא נדל"ן  <br>
+				חמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
+				חברת קדמא נדל"ן הל פז (גגו)וקמה ע"י דוד כהן  קלוגמן 
 			</p>
 			<div>
 
@@ -273,22 +339,25 @@
 		</div>
 
 		<!-- Here is second part -->
-		<div class="row" style="background-color: #ffcc66;margin: 5px;">
-			<div class="col-md-7 col-sm-12">
+		<div class="row" id="wave" style="background-image: url('images/back.png');margin: 5px;">
+			<div class="col-md-7 col-sm-12" style="margin-top: 20px;margin-bottom: 60px;">
 				<img src="images/image1.png" style="width:45vw;margin-top: 40px;margin-left: -20px;">
 			</div>
 			<div class="col-md-5 col-sm-12">
 				<div class="jumbotron" style="background-color: inherit;">
-				    <h2 style="border-top: 3px solid orange;">היישוב  </h2> 
-				    <h2 style="border-top: 3px solid orange;">מרכז שפירא  </h2>     
+				    <h2><u>היישוב  </u></h2> 
+				    <h2><u>מרכז שפירא  </u></h2>     
 				    <p>ההיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לא</p>
 				</div>
 			</div>
 		</div>
-
+		<!-- <div class='wave-top'></div>
+		<div class="wave-mid"></div>
+		<div class="wave-bottom"></div> -->
 		<!-- Here is third part -->
-		<div class="row" style="margin: 15px;">
-			<div class="col-md-7 col-sm-12">
+		<div class="row" style=" margin: 15px;">
+			<div class="col-md-2"></div>
+			<div class="col-md-5 col-sm-12">
 				<div style="margin:10px;">
 					<img src="images/small-background1.png" style="width: 100%;box-shadow: 10px 10px 10px #000000;">
 				</div>
@@ -302,7 +371,7 @@
 				  </ol>
 
 				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
+				  <div class="carousel-inner" role="listbox" style="margin:10px;">
 				    <div class="item active">
 				        <img src="images/slide1.png">
 				    </div>
@@ -334,58 +403,24 @@
 				  </a>
 				</div>
 				</div>
-				<!-- <div class="slide" style="margin: 10px;">
-					<div id="demo" class="carousel slide" data-ride="carousel">
-
-					  <ol class="carousel-indicators">
-					    <li data-target="#demo" data-slide-to="0" class="active"></li>
-					    <li data-target="#demo" data-slide-to="1"></li>
-					    <li data-target="#demo" data-slide-to="2"></li>
-					    <li data-target="#demo" data-slide-to="3"></li>
-					    <li data-target="#demo" data-slide-to="4"></li>
-					    <li data-target="#demo" data-slide-to="5"></li>
-					  </ol>
-
-					  <div class="carousel-inner" role="listbox">
-					    <div class="carousel-item active">
-					      <img src="images/slide1.png" alt="slide1">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="images/slide2.png" alt="slide2">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="images/slide3.png" alt="slide3">
-					    </div>
-					    <div class="carousel-item active">
-					      <img src="images/slide4.png" alt="slide4">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="images/slide5.png" alt="slide5">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="images/slide6.png" alt="slide6">
-					    </div>
-					  </div>
-
-					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-					    <span class="carousel-control-prev-icon"></span>
-					  </a>
-					  <a class="carousel-control-next" href="#demo" data-slide="next">
-					    <span class="carousel-control-next-icon"></span>
-					  </a>
-
-					</div>
-				</div> -->
-
+				
 				<p class="text-right">*הדמיה להמחשה בלבד.</p>
 			</div>
-			<div class="col-md-5 col-sm-12">
-				<h2 class="text-center" style="margin: 30px;"><u>הפרויקט  </u></h2>
+			<div class="col-md-3 col-sm-12">
+				<h2 class="text-center" style="margin: 10px;"><u>הפרויקט  </u></h2>
 				<div style="margin: 10px;background-color: #1e191a;display: flex;justify-content: center;">
 					<img src="images/sample.png">
 				</div>
-				<p style="margin: 10px;">פרויקט "קדמא מרכז שפירא", הינו פרויקט משולב בו ייהנו ממגורים זו</p>
+				<p style="margin-top: 40px;">
+					פרויקט "קדמא מרכז שפירא", הינו פרויקט משולב בו ייהנו ממגורים זוכי הגרלת מחיר למשתכן לצד רוכשי דירות בzzשוק החופשי.<br><br>
+
+					הפרויקט יכלול 15 בניינים בבנייה נמוכה, 65 יחידות דיור בסה"כ, מתוכן 52 דירות נבחרו במיוחד עבורכם הזוכים בהגרלה 997.<br><br>
+
+					לבחירתכם דירות 4, 4.5, 5, 5.5 חדרים, ודירות גן בגדלים שונים אשר תוכננו ע"י משרד האדריכלים "נירייפר", האמון על תכנונן של אלפי יחידות דיור ברחבי הארץ.<br>
+
+					הזוכים בפרויקט ייהנו מאיכות הבנייה הידועה של החברה וממפרט עשיר ומגוון בהתאם לדרישות תכנית "מחיר למשתכן" של משרד הבינוי והשיכון הכולל לפחות חניה אחת לכל דירה.</p>
 			</div>
+			<div class="col-md-2"></div>
 		</div>
 
 		<!-- Here is fourth Map-part -->
