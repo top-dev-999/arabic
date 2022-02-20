@@ -9,45 +9,186 @@ body {
   font-family: Arial;
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+@media (min-width: 768px) and (max-width: 1699px)
+.accordion_block1 {
+    max-width: 700px;
+    margin-left: 15px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.accordion_block1 .panel-heading {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #000;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: inherit;
+}
+.accordion_block1 .panel-title a {
+    border: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.span-leve {
+    background-color: #080808;
+    color: #000;
+    min-width: 67px;
+    position: relative;
+    z-index: 1;
+}
+}
+.span-leve, .accordion_block1 .panel-title strong {
+    color: #52794b;
+    font-weight: normal;
+    font-size: 18px;
+}
+.span-leve span {
+    display: table;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 auto;
+}
+b, strong {
+    font-weight: 700;
+}
+.accordion_block1 .panel-title .collapsed strong {
+    background-color: #f0ad4e;
+    color: #0a0a0a;
+}
+.accordion_block1 .panel-title strong {
+    background-color: #f0ad4e;
+    color: #fff;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: left 10px center;
+    padding-right: 50px;
+    min-height: 49px;
+    width: calc(100% - 67px);
+}
+.span-leve, .accordion_block1 .panel-title strong {
+    color: #f0f5ef;
+    font-weight: normal;
+    font-size: 18px;
+}
+.panel-title strong, .span-leve {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    padding: 15px 10px 15px 0px;
+}
+b, strong {
+    font-weight: 700;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+
+
+.bootstrap-tab.subdivcls {
+    border-top: 1px solid #fff;
+}
+.bootstrap-tab ul.nav {
+    background: #216072;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    padding-right: 0;
+    padding-left: initial;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+ul {
+    margin-bottom: 0;
+    padding-right: 0;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.bootstrap-tab.subdivcls li {
+    border: none;
+    border-left: 1px solid #fff;
+}
+.bootstrap-tab li {
+    float: right;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid #bc9e4a;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+li {
+    list-style: none;
+}
+.subformsection .nav>li>a:focus, .subformsection .nav>li>a:hover, .subformsection .nav>li.active a {
+    background: #137977;
+    color: #fff;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+.nav>li>a:focus, .nav>li>a:hover, .nav>li.active a {
+    background: #137977;
+    color: #fff;
+}
+@media (min-width: 768px) and (max-width: 1379px)
+.nav>li>a {
+    font-size: 14px;
+}
+.nav>li>a {
+    padding: 10px 13px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 18px;
+    font-size: 15px;
+    word-break: break-all;
+    background: #013736;
+    color: #fff;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    color: #fff;
+    transition: all 0.5s;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a {
+    color: #003335;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
 .background {
   background-image:
       url("images/background1.png");

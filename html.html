@@ -127,14 +127,26 @@
 			    right: 0px;
 			    top: -39px;
 		}
+    </style>
+    <style type="text/css">
+    	#googleMap,
+		#googleMap2 {
+		  height: 100%;
+		  width: 50%;
+		  margin: 0px;
+		  padding: 0px
+		}
 
+		#googleMap {
+		  float: left;
+		}
     </style>
 
 	<title>My Site</title>
 	<link rel="shortcut icon" href="{{ asset('images/sample.png') }}">
 </head>
 <body>
-	<div style="width:100%">
+	<div>
 		<!-- Here is header -->
 		<div class="top" style="width: 100%;box-shadow:  5px 5px 5px #000000;">
 			<div class="row top-up">
@@ -142,15 +154,12 @@
 			    	<div class="top-left-up" style="display: flex;justify-content: flex-end;margin-top: 30px;">
 				    	<div class="row">
 						  	<div class="col-md-3">
-						  		<div class="bg-secondary">
-						  			<!-- <button> style="margin-top: 0px;">חיפוש  </button> -->
+						  		<div>
 						  			<div class="dropdown">
-									    <button type="button" class="btn btn-transparent dropdown-toggle text-warning" data-toggle="dropdown">
+									    <button type="button" class="btn btn-dark text-warning">
 									      ביפוש  
 									    </button>
-									    <div class="dropdown-menu">
-									      <input class="dropdown-item" type="text" name="search">
-									    </div>
+									    
 									</div>
 						  		</div>
 						  	</div>
@@ -215,45 +224,45 @@
 			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 				  <ul class="navbar-nav">
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">צור קשר </a>
+				      <a class="nav-link text-dark" href="#menu9">צור קשר </a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">מסמכים וקישורים</a>
+				      <a class="nav-link text-dark" href="#menu8">מסמכים וקישורים</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">תכניות</a>
+				      <a class="nav-link text-dark" href="#menu7">תכניות</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">מחירון</a>
+				      <a class="nav-link text-dark" href="#menu6">מחירון</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">משכנתא</a>
+				      <a class="nav-link text-dark" href="#menu5">משכנתא</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">פריסת התשלומים והוצאות נלוות</a>
+				      <a class="nav-link text-dark" href="#menu4">פריסת התשלומים והוצאות נלוות</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">תהליך הרכישה</a>
+				      <a class="nav-link text-dark" href="#menu3">תהליך הרכישה</a>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">הפרויקט</a>
+				      <a class="nav-link text-dark" href="#menu2">הפרויקט</a>
 				    </li>
-				    <li class="nav-item"  >
+				    <li class="nav-item" style="padding-top: 8px;">
 				      	<div class="dropdown">
-						  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+						  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
 						    מפות ותרשימים 
 						  </button>
 						  <div class="dropdown-menu">
-						    <a class="dropdown-item" href="#">מפת סביבה </a>
-						    <a class="dropdown-item" href="#">תרשים העמדה </a>
+						    <a class="dropdown-item" href="#menu10">מפת סביבה </a>
+						    <a class="dropdown-item" href="#menu10">תרשים העמדה </a>
 						  </div>
 						</div>
 				    </li>
 				    <li class="nav-item" style="margin-right: 20px;">
-				      <a class="nav-link text-dark" href="#">היישוב</a>
+				      <a class="nav-link text-dark" href="#wave">היישוב</a>
 				    </li>
 				    <li class="nav-item" style="margin-left: 20px;">
-				      <a class="nav-link text-dark" href="#">היזם</a>
+				      <a class="nav-link text-dark" href="#menu1">היזם</a>
 				    </li>
 				  </ul>
 			  </div> 
@@ -268,18 +277,17 @@
 
 		<!-- Here is first part -->
 		<div>
-			<div style="display:flex;justify-content: center;width: 100vw;height: 45vh;">
-				<img src="images/center.png">
+			<div id="menu1" style="display:flex;justify-content: center;width: 100vw;height: 45vh;">
+				<img src="images/center.png" >
 			</div>
-			<p class="text-center">חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
-				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
-				חלוגמן ברת קדמא נדל"ן גינדי וק  <br>
-				חהוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו)ברת קדמא נדל"ן  קלוגמן  <br>
-				חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
-				חינדי וגבריאל פז (גגו) קקדמא נדל"ן  <br>
-				חמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן  <br>
-				חברת קדמא נדל"ן הל פז (גגו)וקמה ע"י דוד כהן  קלוגמן 
-			</p>
+			<p class="text-center" style="font-size: 17px;">ח
+						חברת קדמא נדל"ן הוקמה ע"י דוד כהן גינדי וגבריאל פז (גגו) קלוגמן המביאים עמם אל החברה תפיסת מגורים חדשנית השמה את לקוחות החברה </br>
+					ו	צרכיהם במרכז העשייה והיצירה.</br>
+						קדמא נדל"ן הינה חברה פורצת דרך בתחומה, המקפידה על סטנדרטים גבוהים בכל הפרויקטים בהם היא מעורבת, לרבות באזורי ההתיישבות הנהנים </br>
+						לראשונה מרמת הגימור הגבוהה ומהאיכות הבלתי מתפשרת בהן ידועה החברה.</br>
+					א	נו בקדמא שמים דגש על אחריות, מצוינות ומקצועיות ומאמינים ביצירת פרויקטים איכותיים בתכנון נכון וסטנדרט 	בנייה גבוה ומיישמים הלכה למעשה </br>
+						את הערכים העומדים בבסיס החברה המשלבים את החייאת הקדום עם יישום הקידמה.</br>
+						</p>
 			<div>
 
 				<!-- Photo Grid -->
@@ -305,57 +313,26 @@
 				  </div>
 			
 				</div>
-
-				<!-- <div class="row"> 
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img1.png" style="width:100%">
-				  </div>
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img2.png" style="width:100%">
-				  </div>
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img3.png" style="width:100%">
-				  </div>
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img4.png" style="width:100%">
-				  </div>
-				</div>
-				<div class="row"> 
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img5.png" style="width:100%">
-				  </div>
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img6.png" style="width:100%">
-				  </div>
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img7.png" style="width:100%">
-				  </div>
-				  <div class="col-md-3 col-sm-12">
-				    <img src="images/img8.png" style="width:100%">
-				  </div>
-				</div> -->
 			</div>
 			<p class="text-right">תמונות והדמיות להמחשה בלבד. </p>
 		</div>
 
 		<!-- Here is second part -->
-		<div class="row" id="wave" style="background-image: url('images/back.png');margin: 5px;">
+		<div class="row" id="wave" style="background-image: url('images/yellow.png');margin: 5px;">
 			<div class="col-md-7 col-sm-12" style="margin-top: 20px;margin-bottom: 60px;">
 				<img src="images/image1.png" style="width:45vw;margin-top: 40px;margin-left: -20px;">
 			</div>
 			<div class="col-md-5 col-sm-12">
 				<div class="jumbotron" style="background-color: inherit;">
-				    <h2><u>היישוב  </u></h2> 
-				    <h2><u>מרכז שפירא  </u></h2>     
-				    <p>ההיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לא</p>
+				    <h2 style="text-decoration: overline; color: black;">היישוב  </h2> 
+				    <h2 style="text-decoration: overline; color: black;">מרכז שפירא  </h2>     
+				    <p style="color: black;">ההיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאהיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לאיישוב הקהילתי המבוקש ביותר במועצה אזורית שפיר. בעל אופי דתי לא</p>
 				</div>
 			</div>
 		</div>
-		<!-- <div class='wave-top'></div>
-		<div class="wave-mid"></div>
-		<div class="wave-bottom"></div> -->
+		
 		<!-- Here is third part -->
-		<div class="row" style=" margin: 15px;">
+		<div class="row" style=" margin: 15px;" id="menu2">
 			<div class="col-md-2"></div>
 			<div class="col-md-5 col-sm-12">
 				<div style="margin:10px;">
@@ -406,10 +383,10 @@
 				
 				<p class="text-right">*הדמיה להמחשה בלבד.</p>
 			</div>
-			<div class="col-md-3 col-sm-12">
+			<div class="col-md-4 col-sm-12">
 				<h2 class="text-center" style="margin: 10px;"><u>הפרויקט  </u></h2>
 				<div style="margin: 10px;background-color: #1e191a;display: flex;justify-content: center;">
-					<img src="images/sample.png">
+					<img src="images/sample.png" style="width: 200px;">
 				</div>
 				<p style="margin-top: 40px;">
 					פרויקט "קדמא מרכז שפירא", הינו פרויקט משולב בו ייהנו ממגורים זוכי הגרלת מחיר למשתכן לצד רוכשי דירות בzzשוק החופשי.<br><br>
@@ -424,76 +401,126 @@
 		</div>
 
 		<!-- Here is fourth Map-part -->
-		<div style="margin-top: 40px;">
+		<div style="margin-top: 40px;" >
 			
-		    <div style="background-color:#151048;">
-		    	<h1 class="text-center text-light"><u>מפות ותרשימים  </u></h1>
+		    <div id="menu10" style="background-image: url('images/blue1.png');height: 2500px;">
+		    	<h1 class="text-center text-dark" style="text-decoration: underline overline orange; color: #000000;"><strong>מפות ותרשימים  </strong></h1>
 				<!--The div element for the map -->
-			    <div id="map" style="width: 600px; height: 400px;margin-left: 355px;"></div>
+				<div  style="display: flex;">
+				    <div id="googleMap" style="width: 25%; height: 65vh;margin-left: 300px;box-shadow: #f0ad4e -12px 13px 0px 0px;"></div>
+					<div id="googleMap2" style="width: 25%; height: 65vh;margin-left: 90px;box-shadow: #f0ad4e -12px 13px 0px 0px;"></div>
+				</div>
 
 			    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 			    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 
 
 
-		    	<h1 class="text-center text-light" style="padding-top: 60px;"><u>תהליך הרכישה  </u></h1>
-		    	<img src="images/small-background2.png" style="height: 437px;margin: 124px;box-shadow: 19px -20px 0px 0px ghostwhite;">
-		    	<div style="margin: 10px 124px 10px 124px;background-color: lightgrey;">
-		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo1">השלב  1  גרלה ותוצאותיה   </button>
-				  	<div id="demo1" class="collapse">
-				  		<ul class="text-right" style="list-style-type: circle;">
-					  		<li>	משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט לקביעת מיקומם</li>
-					  		<li class="text-right">	משרד הבינוי והשיכון אחראי על שליחת הודעת זכייה לכתובת המייל ו/א</li>
-					  		<li class="text-right"> בשלב זה אין צורך ליצור עמנו קשר, אנו נפנה אליכם באופן יזום.  </li>
-		    			</ul>
-					</div>
-		 		</div>
-		    	<div style="margin: 10px 124px 10px 124px;background-color: lightgrey;">
-		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo2">שלב  2 הכנס זוכים מקוון: הצגת פרויקט "קדמא מרכז שפירא"  </button>
-				  	<div id="demo2" class="collapse">
-				  		<ul class="text-right" style="list-style-type: circle;">
-							<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
-					  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
-					  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
-				  		</ul>
-		    		</div>
-		    	</div>
-		    	<div style="margin: 10px 124px 10px 124px;background-color: lightgrey;">
-		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo3">שלב  3 הבחירת דירה   </button>
-				  	<div id="demo3" class="collapse">
-				  		<ul class="text-right" style="list-style-type: circle;">
-							<li>	ממועד בחירת הדירה יתקיים מספר ימים לאחר שליחת הכנס ע"פ הנחיות מש   </li>
-					  		<li>	מהזמנה אישית לפגישה שאורכה המקסימלי הינו 45 דקות תישלח אל כתובת    </li>
-					  		<li> בזימון למועד זה יתבצע עפ"י סדר הזכייה בכפוף לנהלים של משרד הבינו   </li>
-			    			<li>	מאנא הקפידו להגיע המסמכים הבאים: תעודות זהות של הזוכים (כולל ספח  </li>
-					  		<li>	מבמידה ונבצר מאחד מכם להגיע - יש להצטייד בייפוי כח עפ"י נוסח החב   </li>
-					  		<li> בבמידה ומגיע צד שלישי לבחור עבורכם את הדירה- יש להצטייד בייפוי כ  </li>
-			    			<li>	מלאחר בחירת הדירה ובתום הזמן המוקצב, תתבקשו לחתום על טופס המשריי  </li>
-					  		<li>	מבמהלך תקופה זו אנו נעדכן באתר הפרויקט את מלאי הדירות הקיים בהתא  </li>
-					  		<li> *** תהליך בחירת הדירה מפוקח ע"י נציגי חברת בקרה מטעם משרד הבינו </li>
-					  	</ul>
-		    		</div>
-		    	</div>
-		    	<div style="margin: 10px 124px 100px 124px;background-color: lightgrey;">
-		    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo4">שלב   4  חתימה על חוזה המכר   </button>
-				  	<div id="demo4" class="collapse">
-				  		<ul class="text-right" style="list-style-type: circle;">
-							<li>	מחתימה על חוזה המכר תתקיים עד 30 ימים ממועד בחירת הדירה.  </li>
-					  		<li>	מהזמנה למועד זה תימסר לכם במועד בחירת הדירה ולאחר מכן תישלח אליכ  </li>
-					  		<li> בלחתימת החוזה יש להגיע מצוידים בתעודות זהות+ ספח ושיק עבור שכר ט   </li>
-			    			<li>	מחתימת החוזה תתבצע בנוכחות שני בני הזוג.   </li>
-					  		<li>	מבמידה ונבצר מאחד הזוכים להגיע, יש להצטייד בייפוי כח נוטריוני עפ  </li>
-					  		<li> ב*** מובהר כי חוזה המכר ונספחיו נבדקו ואושרו ע"י משרד הבינוי והש    </li>
-					  	</ul>
-		    		</div>
-		    	</div>
+		    	<h1 id="menu3" class="text-center text-light" style="padding-top: 60px;text-decoration: underline overline orange;"><strong>תהליך הרכישה  </strong></h1>
+		    	<img src="images/small-background2.png" style="width: 80%;margin: 124px;box-shadow: 19px -20px 0px 0px ghostwhite;">
+		    		<div class="accordion_block1" style="padding-top: 30px;">
+						<div class="panel panel-default pannelone">
+                           <div class="panel-heading">
+                              <h4 class="panel-title"> 
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" class="collapsed">
+                                 	<strong class="text-right">הגרלה ותוצאותיה   </strong>
+                                    <div class="span-leve text-right">  <span> <b> שלב 1: </b></span></div>
+                                    
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapse1" class="panel-collapse collapsing" aria-expanded="false" style="height: 0px;">
+                              <div class="panel-body">
+                                 <p class="text-right">משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט, לקביעת מיקומם בסדר בחירת הדירות בהגרלה. <img src="images/list.png"></p>
+                                 <p class="text-right">משרד הבינוי והשיכון אחראי על שליחת הודעת זכייה לכתובת המייל ו/או SMS ובה פירוט מיקומכם לבחירת הדירה כלומר, מספר הזכייה שלכם .<img src="images/list.png"></p>
+                                 <p class="text-right">בשלב זה אין צורך ליצור עמנו קשר, אנו נפנה אליכם באופן יזום. <img src="images/list.png"></p>
+                              </div>
+                           </div>
+                    	</div>
+                    	<div class="panel panel-default pannelone">
+                           <div class="panel-heading">
+                              <h4 class="panel-title"> 
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" class="collapsed">
+                                 	<strong class="text-right">כנסים: הצגת פרויקט "מצפה הרים"  </strong>
+                                    <div class="span-leve text-right">  <span> <b> שלב 2: </b></span></div>
+                                    
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapse2" class="panel-collapse collapsing" aria-expanded="false" style="height: 0px;">
+                              <div class="panel-body">
+                                 <p class="text-right">כנס ההסברה ייערך באופן מקוון/ פרונטלי בהתאם להגבלות הקורונה 
+                              במידה והכנס ייערך באופן וירטואלי ,אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי והשיכון קישור לסרטוני מידע מקיפים אודות הפרויקט, והדרכה על אופן השימוש באתר האינטרנט,  על מנת שתוכלו להכיר את הפרויקט ולקבל את כל הנתונים אודותיו, כולל תכניות דירה, מחירון, מפת התמצאות ועוד. במידה והכנס ייערך באופן פרונטלי הזמנה אישית לכנס המידע תישלח לכתובת המייל כפי שהתקבלה ממשרד הבינוי והשיכון. <img src="images/list.png"></p>
+                               <p class="text-right">מטרת הכנס , אתר האינטרנט וסרטוני ההדרכה היא לספק לכם את כל המידע הנחוץ לכם להכרות עם הפרויקט ותהליך הרכישה במסגרת "מחיר למשתכן", ועל כן חשוב מאוד לצפות בסרטונים על מנת שתוכלו לרכוש דירה בצורה הנכונה עבורכם. <img src="images/list.png"></p>
+                              </div>
+                           </div>
+                    	</div>
+                    	<div class="panel panel-default pannelone">
+                           <div class="panel-heading">
+                              <h4 class="panel-title"> 
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" class="collapsed">
+                                 	<strong class="text-right">בחירת דירה  </strong>
+                                    <div class="span-leve text-right">  <span> <b> שלב 3: </b></span></div>
+                                    
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapse3" class="panel-collapse collapsing" aria-expanded="false" style="height: 0px;">
+                              <div class="panel-body">
+                                 <p class="text-right">מועד בחירת הדירה יתקיים כ-9 ימים קלנדריים ממועד הכנס. זימון למועד זה  יתבצע עפ"י סדר הזכייה בכפוף לנהלים של משרד הבינוי והשיכון.<img src="images/list.png"></p>
+                                 <p class="text-right">זוהי פגישה אישית שאורכה המקסימלי הינו 45 דקות  .<img src="images/list.png"></p>
+                                 <p class="text-right">הזמנה אישית למועד זה תישלח לכתובת המייל כפי שהתקבלה ממשרד הבינוי 
+                                  והשיכון. מועד זה הינו קבוע ואינו ניתן לשינוי, זוכה שיבחר שלא להגיע, תאבד 
+                                  זכאותו בפרויקט בכפוף להוראות משרד הבינוי והשיכון. <img src="images/list.png"></p>
+                                  <p class="text-right">יש להגיע עם המסמכים הבאים: תעודות זהות, הודעת זכייה מטעם משרד הבינוי 
+                                  והשיכון, אישור זכאות ושיק על סך 2,000 ₪ דמי הרשמה. במידה ותבחרו שלא 
+                                  להמשיך בתהליך רכישת הדירה- דמי ההרשמה לא יוחזרו. <img src="images/list.png"></p>
+                                 
+                                  <p class="text-right">במידה ונבצר מאחד הזוכים להגיע - יש להצטייד <a href="#">בייפוי כח</a> עפ"י נוסח החברה 
+                                  אותו יש להדפיס מהפרק מסמכים וקישורים באתר זה. ללא ייפוי כח זה - לא 
+                                  תתאפשר בחירת דירה. </p>
+                                  <p class="text-right">במידה ומגיע צד שלישי לבחור עבורכם את הדירה - יש להצטייד <a href="#">בייפוי כח 
+                                  נוטריוני </a>, עפ"י נוסח החברה, אותו יש להדפיס מהפרק מסמכים וקישורים באתר 
+                                  זה. ללא ייפוי כח זה - לא תתאפשר בחירת דירה. <img src="images/list.png"></p>
+                                  <p class="text-right">לאחר בחירת הדירה ובתום הזמן המוקצב, תתבקשו לחתום על טופס המשריין 
+                                  עבורכם את הדירה עד למועד חתימת החוזה. הבחירה הינה סופית, ואינה ניתנת 
+                                  לשינוי. <img src="images/list.png"></p>
+                                  <p class="text-right">במהלך תקופה זו אנו נעדכן באתר הפרויקט את מלאי הדירות הקיים בהתאם 
+                                  לקצב התקדמות הבחירות.  <img src="images/list.png"></p>
+                                  <p class="text-right">תהליך בחירת הדירה יפוקח ע"י נציגי חברת בקרה מטעם משרד הבינוי והשיכון. <img src="images/list.png"></p>
+                              </div>
+                           </div>
+                    	</div>
+                    	<div class="panel panel-default pannelone">
+                           <div class="panel-heading">
+                              <h4 class="panel-title"> 
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" class="collapsed">
+                                 	<strong class="text-right">חתימה על חוזה המכר  </strong>
+                                    <div class="span-leve text-right">  <span> <b> שלב 4: </b></span></div>
+                                    
+                                 </a>
+                              </h4>
+                           </div>
+                           <div id="collapse4" class="panel-collapse collapsing" aria-expanded="false" style="height: 0px;">
+                              <div class="panel-body">
+                                 <p class="text-right"> חתימה על חוזה המכר תתקיים תוך 14 ימים קלנדריים ממועד בחירת הדירה. <img src="images/list.png"></p>
+                                <p class="text-right">הזמנה למועד זה תימסר לכם במועד בחירת הדירה ולאחר מכן תישלח אליכם הזמנה נוספת לכתובת המייל האישית שלכם. <img src="images/list.png"></p>
+                                <p class="text-right">לחתימת החוזה יש להגיע מצוידים בתעודות זהות+ ספח ושיק עבור שכר טרחת עורך דין. <img src="images/list.png"></p>
+                                <p class="text-right">חתימת החוזה תתבצע בנוכחות שני בני הזוג.  <img src="images/list.png"></p>
+                                <p class="text-right">במידה ונבצר מאחד הזוכים להגיע, יש להצטייד בייפוי כח נוטריוני עפ"י נוסח אותו יש להדפיס מהפרק מסמכים וקישורים באתר זה. ללא ייפוי כח זה - לא תתבצע חתימה על החוזה. <img src="images/list.png"></p>
+                                <p class="text-right">חתימה על חוזה המכר תתקיים כ-14 ימים קלנדריים לאחר מועד בחירת הדירה. <img src="images/list.png"></p>
+                                <p class="text-right">חוזה המכר ונספחיו נבדקו ואושרו ע"י משרד הבינוי והשיכון. <img src="images/list.png"></p>
+                              </div>
+                           </div>
+                    	</div>
+                    </div>
 		    </div>
 		</div>
 
 		<!-- Here is fifth part -->
-		<div>
-			<h2 class="text-center"><u>פריסת תשלומים  </u></h2>
-			<h2 class="text-center">והוצאות נלוות  </h2>
+		<div id="menu4" style="background-image: url('images/fifth.png');">
+			<h3 class="text-center">פריסת תשלומים  </h3>
+			<h3 class="text-center" style="text-decoration: overline orange;color: orange;">והוצאות נלוות  </h3>
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-4 col-sm-12">
@@ -532,11 +559,14 @@
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-8 col-sm-12">
+					<div style="border-bottom: 1px solid orange;">
 					<h4 class="text-right"><strong>מועד המסירה: 31/07/2021</strong></h4>
 					<p class="text-right">פרויקט "קדמא בית אל" מלווה ע"י בנק ירוש  <br>
 							רויקט "קדמא בית אל" מלווה ע"י בנק ירוש  <br>
 							רויקט "קדמא בית אל" מלווה ע"י בנק ירוש  
-					</p><br><br><br>
+					</p>
+					</div><br><br>
+
 					<h4 class="text-right"><strong>בנוסף למחיר הדירה, התשלומים הבאים יחולו על הרוכש וישולמו על ידו  </strong></h4>
 					<p class="text-right">• 5% ממחיר הדירה עד לסך של 4,960 ₪ בתוספת מע"מ ישולמו במעמד 		חתי  <br>
 						• 5% ממחיר הדירה עד לסך של 4,960 ₪ בתוספת מע"מ ישולמו במעמד 		חתי <br>
@@ -550,62 +580,98 @@
 		</div>
 
 		<!-- Here is sixth part -->
-		<div style="background-color: lightgray;">
-			<h2 class="text-center">משכנתא  </u></h2>
-			<h2 class="text-center"><u>האישור העקרוני  </u></h2>
+		<div id="menu5" style="background-color: lightgray;">
+			<h2 class="text-center" style="text-decoration: overline orange;padding-top: 60px; color: #000000;">משכנתא  </h2>
+			<h2 class="text-center" style="text-decoration: overline orange;margin-top: -5px; color: #000000;">האישור העקרוני  </h2>
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
-					<img src="images/small-background3.png" style="width: 30vw;margin: 30px;">
+					<img src="images/small-background3.png" style="width: 48vw;margin: 30px;">
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<div style="margin: 30px;background-color: lightgrey;">
-			    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo1">המה הוא אישור עקרוני? </button>
-					  	<div id="demo1" class="collapse">
-					  		האישור העקרוני הוא השלב הראשון בדרך לקבלת משכנתא והוא מהווה מסמ
-					  		<ul class="text-right" style="list-style-type: circle;">
-						  		<li>	משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט לקביעת מיקומם</li>
-						  		<li class="text-right">	משרד הבינוי והשיכון אחראי על שליחת הודעת זכייה לכתובת המייל ו/א</li>
-						  		<li class="text-right"> בשלב זה אין צורך ליצור עמנו קשר, אנו נפנה אליכם באופן יזום.  </li>
-			    				<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
-						  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
-						  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
+					<div class="accordion_block1" style="padding-top: 30px;">
+						<div class="panel panel-default pannelone">
+							<div class="panel-heading">
+							   <h4 class="panel-title"> 
+								  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_new1" aria-expanded="false" class="collapsed">
+									  <strong class="text-right">?מה הוא אישור עקרוני  </strong>
+									 <div class="span-leve text-right">  <span> <b> שלב 1: </b></span></div>
+									 
+								  </a>
+							   </h4>
+							</div>
+							<div id="collapse_new1" class="panel-collapse collapsing" aria-expanded="false" style="height: 0px;">
+							   <div class="panel-body">
+								  <p class="text-right">משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט לקביעת מיקומם  	משרד הבינוי והשיכון אחראי על שליחת הודעת זכייה לכתובת המייל ו/א  <img src="images/list.png"></p>
+								  <p class="text-right"> בשלב זה אין צורך ליצור עמנו קשר, אנו נפנה אליכם באופן יזום.  כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. <img src="images/list.png"></p>
+								  <p class="text-right">אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  <img src="images/list.png"></p>
+							   </div>
+							</div>
+						 </div>
+						 <div class="panel panel-default pannelone">
+							<div class="panel-heading">
+							   <h4 class="panel-title"> 
+								  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_new2" aria-expanded="false" class="collapsed">
+									  <strong class="text-right">?מה אחוז המימון המקסימלי אותו ניתן לקבל  </strong>
+									 <div class="span-leve text-right">  <span> <b> שלב 2: </b></span></div>
+									 
+								  </a>
+							   </h4>
+							</div>
+							<div id="collapse_new2" class="panel-collapse collapsing" aria-expanded="false" style="height: 0px;">
+							   <div class="panel-body">
+								  <p class="text-right">כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. הנרשמים לפרויקט לקביעת מיקומם  	משרד הבינוי והשיכון אחראי עכנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה.  <img src="images/list.png"></p>
+								  <p class="text-right">אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה   אנו נפנה אליכם באופן יזום.  כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. <img src="images/list.png"></p>
+								  <p class="text-right">במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל שהתקבלה ממשרד הבינוי וה  במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  <img src="images/list.png"></p>
+								  <p class="text-right">במטרת הכנס היא לספק לכם את כל המידע אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה   במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל   <img src="images/list.png"></p>
+							   </div>
+							</div>
+						 </div>
+					 </div>
+                    	</div>
+                    </div>
+                    
+					<!-- <div style="margin: 30px;background-color: white;">
+			    		<button type="button" class="btn btn-warning btn-block text-right text-dark" data-toggle="collapse" data-target="#demo1"><strong>?מה הוא אישור עקרוני  </strong></button>
+					  	<div id="demo1" class="collapse text-right" style="margin-top: 15px;">
+					  		<ul class="text-right" style="list-style-type: circle;list-style-type: none;">
+						  		<li>משרד הבינוי והשיכון ערך הגרלה בין הנרשמים לפרויקט לקביעת מיקומם  	משרד הבינוי והשיכון אחראי על שליחת הודעת זכייה לכתובת המייל ו/א  <img src="images/list.png"></li><br>
+						  		<li class="text-right"> בשלב זה אין צורך ליצור עמנו קשר, אנו נפנה אליכם באופן יזום.  כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. <img src="images/list.png"></li><br>
+						  		<li>אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  <img src="images/list.png"></li>
 					  		</ul>
 						</div>
 			 		</div>
-			    	<div style="margin: 30px;background-color: lightgrey;">
-			    		<button type="button" class="btn btn-warning btn-block text-right" data-toggle="collapse" data-target="#demo2">שמה אחוז המימון המקסימלי אותו ניתן לקבל? </button>
-					  	<div id="demo2" class="collapse">
-					  		אחוז המימון המקסימלי כפי שאישר בנק ישראל הינו עד 75% משווי הנכס
-					  		<ul class="text-right" style="list-style-type: circle;">
-								<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
-						  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
-						  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
-					  			<li>	כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. </li>
-						  		<li>	אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה  </li>
-						  		<li> במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  </li>
+			 		
+			    	<div style="margin: 30px;background-color: white;">
+			    		<button type="button" class="btn btn-warning btn-block text-right text-dark" data-toggle="collapse" data-target="#demo2"><strong>?מה אחוז המימון המקסימלי אותו ניתן לקבל  </strong></button>
+					  	<div id="demo2" class="collapse text-right" style="margin-top: 15px;">
+					  		<ul class="text-right" style="list-style-type: circle;list-style-type: none;">
+								<li>כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. הנרשמים לפרויקט לקביעת מיקומם  	משרד הבינוי והשיכון אחראי עכנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה.   <img src="images/list.png"></li><br>
+						  		<li class="text-right">אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה   אנו נפנה אליכם באופן יזום.  כנס ההסברה ייערך באופן מקוון באמצעות סרטון הדרכה. <img src="images/list.png"></li><br>
+						  		<li>במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל שהתקבלה ממשרד הבינוי וה  במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל  <img src="images/list.png"></li><br>
+								<li>במטרת הכנס היא לספק לכם את כל המידע אנו נשלח אל כתובת המייל האישית שלכם כפי שהתקבלה ממשרד הבינוי וה   במטרת הכנס היא לספק לכם את כל המידע הנחוץ להכרות עם הפרויקט ותהל   <img src="images/list.png"></li>
 					  		</ul>
 			    		</div>
-			    	</div>
+			    	</div> -->
 				</div>
+
 			</div>
-			<p class="text-right">*** אין לראות במידע זה כייעוץ משפטי ו/או ייעוץ כלכלי ו/או חוות </p>
+			<p class="text-right" style="padding: 0 48px 30px 0; background-color: lightgrey; color: #000000;">*** אין לראות במידע זה כייעוץ משפטי ו/או ייעוץ כלכלי ו/או חוות </p>
+
 		</div>
 
 		<!-- Here is seventh -->
 		<div>
-			<div style="background-image: url('images/small-background4.png');width: 100%;height: 350px;box-shadow: 5px 5px 5px #000000; margin: -10px;">
-			    	<div class="top-left-up" style="display: flex;justify-content: center;padding-top: 250px;">
+			<div id="menu6" style="background-image: url('images/small-background4.png');width: 100%;height: 450px;box-shadow: 5px 5px 5px #000000; margin: -10px;">
+				<div style="padding: 150px 0 0 300px;"><h2 class="text-white" style="text-decoration: overline underline orange; font-size: 33px;">מחירון </h2></div>
+			    	<div class="top-left-up" style="display: flex;justify-content: center;padding-top: 150px;">
 				    	<div class="row">
 						  	<div class="col-sm-3">
-						  		<div class="bg-secondary">
+						  		<div>
 						  			<!-- <button> style="margin-top: 0px;">חיפוש  </button> -->
 						  			<div class="dropdown">
-									    <button type="button" class="btn btn-warning dropdown-toggle text-dark" data-toggle="dropdown">
+									    <button type="button" class="btn btn-warning text-dark">
 									      ביפוש  
 									    </button>
-									    <div class="dropdown-menu">
-									      <input class="dropdown-item" type="text" name="search">
-									    </div>
 									</div>
 						  		</div>
 						  	</div>
@@ -654,27 +720,29 @@
     				</div>
 			</div>
 			<div style="margin: 20px;overflow-x:auto;">
+
+				<div class="text-light" style="background-color: #003366;">
+						<ul style="display: flex; width: 97%; height: 40px; margin: 0;">
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">15בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">14בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">13בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">12בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">11בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">10בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">9בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">8בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">7בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">6בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">5בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">5בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">4בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">3בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">2בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">1בניין  </p></li>
+						</ul>
+				</div>
 				<table class="table table-striped" border="1" style="width: 100%;">
-					<thead class="text-light" style="background-color: #003366;">
-						<tr>
-							<th>1בניין  </th>
-							<th>2בניין  </th>
-							<th>3בניין  </th>
-							<th>4בניין  </th>
-							<th>5בניין  </th>
-							<th>5בניין  </th>
-							<th>6בניין  </th>
-							<th>7בניין  </th>
-							<th>8בניין  </th>
-							<th>9בניין  </th>
-							<th>10בניין  </th>
-							<th>11בניין  </th>
-							<th>12בניין  </th>
-							<th>13בניין  </th>
-							<th>14בניין  </th>
-							<th>15בניין  </th>
-						</tr>
-					</thead>
+					
 					<tbody>
 						<tr class="text-light" style="background-color: #003366;">
 							<td>הערות </td>
@@ -685,10 +753,10 @@
 							<td>שטח מחסן  </td>
 							<td>שטח דירה </td>
 							<td>מספר חדרים</td>
-							<td colspan="2">קומה </td>
-							<td colspan="2">דגם דירה </td>
-							<td colspan="2">מספר דירה </td>
-							<td colspan="2">מספר בניין </td>
+							<td>קומה </td>
+							<td>דגם דירה </td>
+							<td>מספר דירה </td>
+							<td>מספר בניין </td>
 						</tr>
 						<tr>
 							<td></td>
@@ -699,10 +767,10 @@
 							<td>6.01</td>
 							<td>186.12</td>
 							<td>124.39</td>
-							<td colspan="2">5</td>
-							<td colspan="2">-4</td>
-							<td colspan="2">1</td>
-							<td colspan="2">41</td>
+							<td>5</td>
+							<td>-4</td>
+							<td>1</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -713,10 +781,10 @@
 							<td>6.0</td>
 							<td>158.34</td>
 							<td>125.04</td>
-							<td colspan="2">5</td>
-							<td colspan="2">-4</td>
-							<td colspan="2">2</td>
-							<td colspan="2">41</td>
+							<td>5</td>
+							<td>-4</td>
+							<td>2</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -727,10 +795,10 @@
 							<td>6.10</td>
 							<td>29.09</td>
 							<td>125.07</td>
-							<td colspan="2">5</td>
-							<td colspan="2">-3</td>
-							<td colspan="2">3</td>
-							<td colspan="2">41</td>
+							<td>5</td>
+							<td>-3</td>
+							<td>3</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -741,10 +809,10 @@
 							<td>6.71</td>
 							<td>104.39</td>
 							<td>123.98</td>
-							<td colspan="2">5</td>
-							<td colspan="2">-2</td>
-							<td colspan="2">5</td>
-							<td colspan="2">41</td>
+							<td>5</td>
+							<td>-2</td>
+							<td>5</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -755,10 +823,10 @@
 							<td>7.31</td>
 							<td>105.07</td>
 							<td>123.37</td>
-							<td colspan="2">5</td>
-							<td colspan="2">-2</td>
-							<td colspan="2">6</td>
-							<td colspan="2">41</td>
+							<td>5</td>
+							<td>-2</td>
+							<td>6</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -769,10 +837,10 @@
 							<td>4.37</td>
 							<td>64.8</td>
 							<td>101.5</td>
-							<td colspan="2">4</td>
-							<td colspan="2">-1</td>
-							<td colspan="2">7</td>
-							<td colspan="2">41</td>
+							<td>4</td>
+							<td>-1</td>
+							<td>7</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -783,10 +851,10 @@
 							<td>4.32</td>
 							<td>57.44</td>
 							<td>100.75</td>
-							<td colspan="2">4</td>
-							<td colspan="2">-1</td>
-							<td colspan="2">8</td>
-							<td colspan="2">41</td>
+							<td>4</td>
+							<td>-1</td>
+							<td>8</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -797,10 +865,10 @@
 							<td>6.05</td>
 							<td>18.45</td>
 							<td>75.15</td>
-							<td colspan="2">3</td>
-							<td colspan="2">0</td>
-							<td colspan="2">9</td>
-							<td colspan="2">41</td>
+							<td>3</td>
+							<td>0</td>
+							<td>9</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -811,10 +879,10 @@
 							<td>3.75</td>
 							<td>28.92</td>
 							<td>89.39</td>
-							<td colspan="2">3</td>
-							<td colspan="2">0</td>
-							<td colspan="2">10</td>
-							<td colspan="2">41</td>
+							<td>3</td>
+							<td>0</td>
+							<td>10</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -825,10 +893,10 @@
 							<td>6.02</td>
 							<td>17.36</td>
 							<td>100.25</td>
-							<td colspan="2">4</td>
-							<td colspan="2">0</td>
-							<td colspan="2">11</td>
-							<td colspan="2">41</td>
+							<td>4</td>
+							<td>0</td>
+							<td>11</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -839,10 +907,10 @@
 							<td>4.47</td>
 							<td>49.51</td>
 							<td>75.15</td>
-							<td colspan="2">3</td>
-							<td colspan="2">0</td>
-							<td colspan="2">12</td>
-							<td colspan="2">41</td>
+							<td>3</td>
+							<td>0</td>
+							<td>12</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -853,10 +921,10 @@
 							<td>4.47</td>
 							<td>28.20</td>
 							<td>93.24</td>
-							<td colspan="2">4</td>
-							<td colspan="2">1</td>
-							<td colspan="2">13</td>
-							<td colspan="2">41</td>
+							<td>4</td>
+							<td>1</td>
+							<td>13</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -867,10 +935,10 @@
 							<td>6.76</td>
 							<td>21.11</td>
 							<td>89.39</td>
-							<td colspan="2">3</td>
-							<td colspan="2">1</td>
-							<td colspan="2">14</td>
-							<td colspan="2">41</td>
+							<td>3</td>
+							<td>1</td>
+							<td>14</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -881,10 +949,10 @@
 							<td>4.47</td>
 							<td>20.60</td>
 							<td>88.69</td>
-							<td colspan="2">3</td>
-							<td colspan="2">1</td>
-							<td colspan="2">15</td>
-							<td colspan="2">41</td>
+							<td>3</td>
+							<td>1</td>
+							<td>15</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -895,10 +963,10 @@
 							<td>6.65</td>
 							<td>15.91</td>
 							<td>93.24</td>
-							<td colspan="2">3</td>
-							<td colspan="2">2</td>
-							<td colspan="2">17</td>
-							<td colspan="2">41</td>
+							<td>3</td>
+							<td>2</td>
+							<td>17</td>
+							<td>41</td>
 						</tr>
 						<tr>
 							<td></td>
@@ -909,10 +977,10 @@
 							<td>10.72</td>
 							<td>127.07</td>
 							<td>126.94</td>
-							<td colspan="2">5</td>
-							<td colspan="2">4</td>
-							<td colspan="2">23</td>
-							<td colspan="2">41</td>
+							<td>5</td>
+							<td>4</td>
+							<td>23</td>
+							<td>41</td>
 						</tr>
 					</tbody>
 				</table>
@@ -920,30 +988,31 @@
 		</div>
 
 		<!-- Here is sckech part -->
-		<div style="background-image: url('images/sckech.png');box-shadow: 17px -2px 10px #000000;">
-			<h2 class="text-center"><u>תכניות  </u></h2>
-			<div style="margin: 20px;overflow-x:auto;">
-				<table class="table table-striped" border="1" style="width: 100%;">
-					<thead class="text-light" style="background-color: #003366;">
-						<tr>
-							<td>1בניין  </td>
-							<td>2בניין  </td>
-							<td>3בניין  </td>
-							<td>4בניין  </td>
-							<td>5בניין  </td>
-							<td>5בניין  </td>
-							<td>6בניין  </td>
-							<td>7בניין  </td>
-							<td>8בניין  </td>
-							<td>9בניין  </td>
-							<td>10בניין  </td>
-							<td>11בניין  </td>
-							<td>12בניין  </td>
-							<td>13בניין  </td>
-							<td>14בניין  </td>
-							<td>15בניין  </td>
-						</tr>
-					</thead>
+		<div id="menu7" style="background-image: url('images/sckech.png');box-shadow: 17px -2px 10px #000000; padding: 50px;">
+			<h2 class="text-center" style="text-decoration: overline underline orange;padding-top: 60px;">תכניות  </h2>
+			<div style="margin: 20px;overflow-x:auto;  ">
+				<div class="text-light" style="background-color: #003366;">
+						<ul style="display: flex; width: 97%; height: 40px; margin: 0;">
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">15בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">14בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">13בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">12בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">11בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">10בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">9בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">8בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">7בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">6בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">5בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">5בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">4בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">3בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">2בניין  </p></li>
+							<li class="text-center" style="border: 1px solid;width: 80px;"><p style="padding-top: 8px;">1בניין  </p></li>
+						</ul>
+				</div>
+				<table class="table table-striped" border="1" style="width: 100%; background-color: white;">
+					
 					<tbody>
 						<tr class="text-light" style="background-color: #003366;">
 							<td colspan="8" class="text-center">תוכנית דירה  </td>
@@ -1045,9 +1114,9 @@
 		</div>
 
 		<!-- Here is list part -->
-		<div class='clearfix'></div>
+		<div id="menu8" class='clearfix'></div>
 		<div class="center" style="margin-top:3%; margin-bottom:5%">
-			<h2 class="text-dack page-header text-center" style="margin: 50px;margin: inherit;"><u>מסמכים וקישורים  </u></h2>
+			<h2 class="text-dack page-header text-center" style="text-decoration: underline orange;padding-top: 50px;">מסמכים וקישורים  </h2>
 			<ul class="press" style="display: flex;justify-content: center; list-style-type: none;">
 				<li style="padding-right: 55px;">
 					<div class="press-logo">
@@ -1107,7 +1176,7 @@
 		</div>
 
 		<!-- Here is foot part -->
-		<div class="foot">
+		<div id="menu9" class="foot">
 			<div class="foot-up" style="background-color: #1e191a;height: 120px;margin: -20px;">
 				<a href="#" style="display: flex;justify-content: center;"><img src="images/sample.png"></a>
 			</div>
@@ -1122,7 +1191,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.1/holder.min.js"></script>
-    
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
    
     <!-- Here is slide script -->
 	<script type="text/javascript">
@@ -1133,7 +1202,7 @@
 	</script>
 
 	<!-- Here get map -->
-	<script>
+	<!-- <script>
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
@@ -1149,6 +1218,39 @@
           map: map,
         });
       }
+    </script> -->
+    <script type="text/javascript">
+    	var myCenter = new google.maps.LatLng(51.059955, -114.211807);
+		var myCenter2 = new google.maps.LatLng(50.9156772, -113.9640719);
+
+		function initialize() {
+		  var mapProp = {
+		    center: myCenter,
+		    zoom: 14,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP
+		  };
+		  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+		  var marker = new google.maps.Marker({
+		    position: myCenter,
+		    animation: google.maps.Animation.DROP,
+		    icon: 'http://www.fergusandbix.com/images/FB-pin.png'
+		  });
+		  marker.setMap(map);
+
+		  var mapProp2 = {
+		    center: myCenter2,
+		    zoom: 14,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP2
+		  };
+		  var map = new google.maps.Map(document.getElementById("googleMap2"), mapProp2);
+		  var marker = new google.maps.Marker({
+		    position: myCenter2,
+		    animation: google.maps.Animation.DROP,
+		    icon: 'http://www.fergusandbix.com/images/FB-pin.png'
+		  });
+		  marker.setMap(map);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
     
 		
